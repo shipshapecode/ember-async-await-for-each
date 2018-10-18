@@ -1,9 +1,13 @@
 {
   "name": "ember-async-await-for-each",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "async/await aware forEach for Ember",
   "keywords": [
-    "ember-addon"
+    "async",
+    "await",
+    "async/await",
+    "ember-addon",
+    "forEach"
   ],
   "repository": "",
   "license": "MIT",
@@ -14,7 +18,6 @@
   },
   "scripts": {
     "build": "ember build",
-    "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
@@ -26,7 +29,6 @@
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
     "broccoli-asset-rev": "^2.7.0",
-    "ember-ajax": "^3.1.0",
     "ember-cli": "~3.5.0-beta.2",
     "ember-cli-dependency-checker": "^3.0.0",
     "ember-cli-eslint": "^4.2.3",
@@ -34,7 +36,6 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.3",
     "ember-cli-inject-live-reload": "^1.8.2",
     "ember-cli-sri": "^2.1.1",
-    "ember-cli-template-lint": "^1.0.0-beta.1",
     "ember-cli-uglify": "^2.1.0",
     "ember-disable-prototype-extensions": "^1.1.3",
     "ember-export-application-global": "^2.0.0",
