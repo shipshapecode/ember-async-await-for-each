@@ -9,9 +9,9 @@
     "ember-addon",
     "forEach"
   ],
-  "repository": "",
+  "repository": "https://github.com/shipshapecode/ember-async-await-for-each",
   "license": "MIT",
-  "author": "",
+  "author": "Robert Wagner",
   "directories": {
     "doc": "doc",
     "test": "tests"
