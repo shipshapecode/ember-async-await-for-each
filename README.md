@@ -6,7 +6,7 @@ ember-async-await-for-each
 
 [![npm version](https://badge.fury.io/js/ember-async-await-for-each.svg)](http://badge.fury.io/js/ember-async-await-for-each)
 ![Download count all time](https://img.shields.io/npm/dt/ember-async-await-for-each.svg)
-[![npm](https://img.shields.io/npm/dm/ember-async-await-for-each.svg)]()
+![npm](https://img.shields.io/npm/dm/ember-async-await-for-each.svg)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-async-await-for-each.svg)](http://emberobserver.com/addons/ember-async-await-for-each)
 [![Build Status](https://travis-ci.org/shipshapecode/ember-async-await-for-each.svg)](https://travis-ci.org/shipshapecode/ember-async-await-for-each)
 [![Code Climate](https://codeclimate.com/github/shipshapecode/ember-async-await-for-each/badges/gpa.svg)](https://codeclimate.com/github/shipshapecode/ember-async-await-for-each)
