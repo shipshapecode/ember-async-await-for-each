@@ -1,6 +1,6 @@
 {
   "name": "ember-async-await-for-each",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "async/await aware forEach for Ember",
   "keywords": [
     "async",
