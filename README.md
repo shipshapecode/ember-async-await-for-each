@@ -13,7 +13,7 @@ ember-async-await-for-each
 [![Test Coverage](https://codeclimate.com/github/shipshapecode/ember-async-await-for-each/badges/coverage.svg)](https://codeclimate.com/github/shipshapecode/ember-async-await-for-each/coverage)
 
 `async/await` aware `forEach` for Ember. Concept taken from [this great article](https://codeburst.io/javascript-async-await-with-foreach-b6ba62bbf404)
-on `async/await` in `forEach`. 
+on `async/await` in `forEach`.
 
 Installation
 ------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ An example of how you could use it to save addresses for a person model is below
 const saveAddresses = async () => {
   await asyncForEach(person.get('addresses').toArray(), async (address) => {
     const address = await person.get('address');
-  
+
     if (address.get('isDirty')) {
       return await address.save();
     }
@@ -58,11 +58,29 @@ const doOtherAsyncStuff = async () => {
 };
 ```
 
+### Serial vs parallel execution
+`asyncForEach` resolves the callbacks in a serial fashion. This means that it waits until a callback is fully resolved before moving onto the next element in the list.
+
+To launch all callbacks in parallel, you would have to do something like below instead:
+
+```js
+import { all } from 'rsvp';
+
+const saveAddressesParallel = async () => {
+  await all(person.get('addresses').toArray().map(async (address) => {
+    const address = await person.get('address');
+
+    if (address.get('isDirty')) {
+      return await address.save();
+    }
+  }));
+};
+```
+
 Contributing
 ------------------------------------------------------------------------------
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
-
 
 License
 ------------------------------------------------------------------------------
