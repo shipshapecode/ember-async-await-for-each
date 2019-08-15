@@ -15,6 +15,13 @@ ember-async-await-for-each
 `async/await` aware `forEach` for Ember. Concept taken from [this great article](https://codeburst.io/javascript-async-await-with-foreach-b6ba62bbf404)
 on `async/await` in `forEach`.
 
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.4 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
 Installation
 ------------------------------------------------------------------------------
 
